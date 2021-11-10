@@ -1,0 +1,114 @@
+<html>
+    <body>
+        <title>Cardapio Sucos</title>
+        <meta charset="UTF-8" />
+
+        <link rel="stylesheet" type="text/css" href="index.css"/>
+
+        <script>
+            function alerta(){
+                alert("Pedido realizado")
+            }
+        </script>
+    
+    </body>
+    <head>
+        <h1>Cardapio</h1>
+        <h3>Escolha o(s) suco(s)</h3>
+        <div>
+            <table style="width:40%">
+                <tr>
+                  <th style="width:5%">Número</th>
+                  <th style="width:20%">Suco</th>
+                  <th style="width:15%">Preço</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Abacaxi</td>
+                    <td>R$ 7,0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Abacaxi com hortelã</td>
+                    <td>R$ 8,0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Abacaxi com hortelã e gengibre</td>
+                    <td>R$ 8,5</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Acerola</td>
+                    <td>R$ 7,5</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Acerola com cenoura e laranja</td>
+                    <td>R$ 8,5</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Kiwi</td>
+                    <td>R$ 8,0</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Laranja</td>
+                    <td>R$ 7,5</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Laranja com acerola</td>
+                    <td>R$ 7,5</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Limão</td>
+                    <td>R$ 8,0</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Limonada Suíça</td>
+                    <td>R$ 7,0</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Limão com hortelã</td>
+                    <td>R$ 7,5</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Melancia</td>
+                    <td>R$ 7,0</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Melancia com gengibre</td>
+                    <td>R$ 8,5</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Morango</td>
+                    <td>R$ 9,0</td>
+                </tr>
+              </table>
+        </div>
+        <div class="formulario">
+            <fieldset>
+                <legend>Realize seu pedido</legend>
+                <form >
+                    <label for="fname">Produto: </label><br>
+                    <input type="number" id="fname" name="fname" max="14" min="1" required autofocus><br><br>
+                    <label for="quantidade">Quantidade: </label><br>
+                    <input type="number" id="quantidade" name="quantidade" max="100" min="1" required><br><br>
+                    
+                    <input type="submit" value="Pedir" onclick="alerta()">
+                </form>
+            </fieldset>
+        </div>
+        <a>
+            <input type="button" value="Voltar" id="volta">
+        </a>
+    </head>
+</html>
